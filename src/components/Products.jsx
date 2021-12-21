@@ -14,7 +14,7 @@ const Products = ({category, search, filters, sort}) => {
         const getProducts = async() => {
             try{
 
-                const res =  await axios.get( category ? `http://localhost:5000/api/products?category=${category}` : "http://localhost:5000/api/products" );
+                const res =  await axios.get( category ? `${process.env.REACT_APP_BASE_URL}/products?category=${category}` : `${process.env.REACT_APP_BASE_URL}/products` );
 
                 // console.log(res.data);
                 
