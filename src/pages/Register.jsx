@@ -17,16 +17,16 @@ const Register = () => {
         });
     }
 
-    const handleClick = () => {
+    const handleClick = async() => {
         if(user.password !== user.confirmPassword){
             setError(true);
         }
         else{
             const {confirmPassword, ...userToRegister} = user;
             // console.log("dispatching now........")
-            register(dispatch, userToRegister) ;
+            await register(dispatch, userToRegister) ;
             const {fname, lname, email, ...userToLogin} = userToRegister
-            login(dispatch, userToLogin);
+            await login(dispatch, userToLogin);
             history.push("/");
         }
     }
