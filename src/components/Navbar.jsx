@@ -40,19 +40,6 @@ const Navbar = () => {
                </div>
 
                <div className="navbar-right">
-                    <div className="navbar-menu-item" onClick={() => history.push("/")}> <b>Home</b> </div>
-
-                   <div className="navbar-menu-item" onClick={handleLogout}> <b>Logout</b> </div>
-
-                   <div className="navbar-menu-item" onClick={() => history.push("/orders")}> <b>My Orders</b> </div>
-
-                   <Link to="/cart">
-                    <div className="navbar-menu-item" >
-                        <Badge badgeContent={cartQuantity} color="primary">
-                            <ShoppingCartOutlinedIcon style={{color:"black"}} />
-                        </Badge>
-                    </div>
-                   </Link>
 
                    <Link to="/wishlist">
                     <div className="navbar-menu-item" >
@@ -61,6 +48,17 @@ const Navbar = () => {
                         </Badge>
                     </div>
                    </Link>
+                   <Link to="/cart">
+                    <div className="navbar-menu-item" >
+                        <Badge badgeContent={cartQuantity} color="primary">
+                            <ShoppingCartOutlinedIcon style={{color:"black"}} />
+                        </Badge>
+                    </div>
+                   </Link>
+                   <div className="navbar-menu-item" onClick={() => history.push("/orders")}> <b>My Orders</b> </div>
+                   <div className="navbar-menu-item" onClick={() => history.push("/")}> <b>Home</b> </div>
+                   <div className="navbar-menu-item" onClick={handleLogout}> <b>Logout</b> </div>
+
                </div>    
            </div>
        </div>
