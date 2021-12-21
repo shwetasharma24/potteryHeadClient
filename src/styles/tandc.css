@@ -1,0 +1,15 @@
+.tandc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tandc-heading {
+  margin: 20px;
+  padding: 10px;
+}
+
+.tandc-para {
+  margin: 20px;
+}

@@ -1,0 +1,42 @@
+.product-list-container {
+}
+
+.product-list-title {
+  margin: 20px;
+}
+
+.product-list-filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list-filter {
+  margin: 20px;
+}
+
+.product-list-search-container {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.product-list-input {
+  border: none;
+}
+
+.product-list-input:active {
+  border: none;
+}
+
+.product-list-filter-text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.product-list-select {
+  padding: 10px;
+  margin-right: 10px;
+}
