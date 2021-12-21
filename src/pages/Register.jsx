@@ -47,7 +47,7 @@ const Register = () => {
                     { error && <span className='register-error'> PASSWORDS DON'T MATCH! </span> }
 
                     <div className="register-link">
-                        <a href="/login" className="register-login"> ALREADY HAVE AN ACCOUNT? SIGN IN </a>
+                        <a style={{cursor:"pointer", textDecoration: "underline"}} onClick={() => history.push("/login")} className="register-login"> ALREADY HAVE AN ACCOUNT? SIGN IN </a>
                     </div>
                 </div>
             </div>
